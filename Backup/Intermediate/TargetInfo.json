@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "AnimationPlaySpace",
+			"Path": "..\\Source\\AnimationPlaySpace.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "AnimationPlaySpaceEditor",
+			"Path": "..\\Source\\AnimationPlaySpaceEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

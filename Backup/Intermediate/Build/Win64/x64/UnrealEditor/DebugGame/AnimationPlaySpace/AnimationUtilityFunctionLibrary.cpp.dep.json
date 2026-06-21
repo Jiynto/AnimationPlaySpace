@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\animation\\animationutilityfunctionlibrary.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\animationplayspaceeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\animationplayspace\\definitions.animationplayspace.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\animation\\animationutilityfunctionlibrary.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\animationutilityfunctionlibrary.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\locomotionanimationset.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\locomotionanimationset.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\animation\\animcurvecompressioncodec_uniformindexable.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\animation\\animcurvecompressioncodec.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\animcurvecompressioncodec.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\animcurvecompressioncodec_uniformindexable.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

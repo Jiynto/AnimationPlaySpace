@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_sidescrolling\\gameplay\\sidescrollingmovingplatform.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\animationplayspaceeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\animationplayspace\\definitions.animationplayspace.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_sidescrolling\\gameplay\\sidescrollingmovingplatform.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_sidescrolling\\interfaces\\sidescrollinginteractable.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\sidescrollinginteractable.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\sidescrollingmovingplatform.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

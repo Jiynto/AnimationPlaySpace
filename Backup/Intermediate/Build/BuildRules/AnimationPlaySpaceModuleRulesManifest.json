@@ -1,0 +1,10 @@
+{
+	"SourceFiles": [
+		"E:\\Unreal\\Projects\\AnimationPlaySpace\\Source\\AnimationPlaySpace\\AnimationPlaySpace.Build.cs",
+		"E:\\Unreal\\Projects\\AnimationPlaySpace\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageNodes\\GameplayMessageNodes.Build.cs",
+		"E:\\Unreal\\Projects\\AnimationPlaySpace\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\GameplayMessageRuntime.Build.cs",
+		"E:\\Unreal\\Projects\\AnimationPlaySpace\\Source\\AnimationPlaySpace.Target.cs",
+		"E:\\Unreal\\Projects\\AnimationPlaySpace\\Source\\AnimationPlaySpaceEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.4"
+}

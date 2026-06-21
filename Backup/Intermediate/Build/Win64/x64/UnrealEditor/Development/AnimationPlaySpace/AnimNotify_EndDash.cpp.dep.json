@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_platforming\\animation\\animnotify_enddash.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\animationplayspaceeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\animationplayspace\\definitions.animationplayspace.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_platforming\\animation\\animnotify_enddash.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\animnotify_enddash.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_platforming\\platformingcharacter.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\net\\iris\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\platformingcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

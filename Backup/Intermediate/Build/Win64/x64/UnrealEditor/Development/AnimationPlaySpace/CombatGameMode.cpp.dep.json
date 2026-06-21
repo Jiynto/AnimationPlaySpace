@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_combat\\combatgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\animationplayspaceeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\animationplayspace\\definitions.animationplayspace.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\variant_combat\\combatgamemode.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\combatgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\AnimationPlaySpace.sln.DotSettings.user" />
+    <None Include="..\..\AnimationPlaySpace.uproject" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\PlayerAnimInstanceCPP.txt" />
+    <None Include="..\..\PlayerAnimInstanceH.txt" />
+    <None Include="..\..\PlayerCharacter.txt" />
+    <None Include="..\..\PlayerCharacterCPP.txt" />
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GameplayMessageRouter">
+      <UniqueIdentifier>{9D7281A3-00CF-37CE-AB96-C65F44BCD644}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GameplayMessageRouter\GameplayMessageRouter.uplugin">
+      <Filter>Plugins\GameplayMessageRouter</Filter>
+    </None>
+    <Filter Include="Plugins\GameplayMessageRouter\Source">
+      <UniqueIdentifier>{AD63915F-3CDB-3083-840D-0F0A56F9C437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageNodes">
+      <UniqueIdentifier>{8EBD47BD-95D7-305A-AE63-699A8AE0F4BE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\GameplayMessageNodes.Build.cs">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageNodes</Filter>
+    </None>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Private">
+      <UniqueIdentifier>{2AC0EA5E-EA15-3827-AF1D-E4E135289270}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Private\GameplayMessageNodesModule.cpp">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Private\K2Node_AsyncAction_ListenForGameplayMessages.cpp">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Public">
+      <UniqueIdentifier>{3B246B6A-8BBA-37C4-AFEE-E8B17D62C832}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Public\K2Node_AsyncAction_ListenForGameplayMessages.h">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageNodes\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime">
+      <UniqueIdentifier>{3801EBE5-749A-3CE3-ADEE-3AA54924F5F1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\GameplayMessageRuntime.Build.cs">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime</Filter>
+    </None>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private">
+      <UniqueIdentifier>{1392D215-555C-3BEE-A3A6-F4EBA97AD3C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework">
+      <UniqueIdentifier>{194EFB08-7285-3F27-BCC4-98CE90DAA6A9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework\AsyncAction_ListenForGameplayMessage.cpp">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework\GameplayMessageRuntime.cpp">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework\GameplayMessageSubsystem.cpp">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Private\GameFramework</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public">
+      <UniqueIdentifier>{97B6F166-C7DD-36D9-AAB3-083BD76DDE0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework">
+      <UniqueIdentifier>{48EFE913-C5C3-3058-B3DA-C4B7C5844910}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework\AsyncAction_ListenForGameplayMessage.h">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework\GameplayMessageSubsystem.h">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework\GameplayMessageTypes2.h">
+      <Filter>Plugins\GameplayMessageRouter\Source\GameplayMessageRuntime\Public\GameFramework</Filter>
+    </ClInclude>
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AnimationPlaySpace.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AnimationPlaySpaceEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\AnimationPlaySpace">
+      <UniqueIdentifier>{38EDDADC-9D8A-3281-BF75-F2EF670F44A0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpace.Build.cs">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpace.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpace.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpaceCharacter.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpaceCharacter.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpaceGameMode.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpaceGameMode.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpacePlayerController.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\AnimationPlaySpacePlayerController.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Animation">
+      <UniqueIdentifier>{BD6A5D03-0C8C-3696-B40B-385B75F4D8DE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Animation\AnimationUtilityFunctionLibrary.cpp">
+      <Filter>Source\AnimationPlaySpace\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Animation\AnimationUtilityFunctionLibrary.h">
+      <Filter>Source\AnimationPlaySpace\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Animation\CustomAnimationTypes.h">
+      <Filter>Source\AnimationPlaySpace\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Animation\EnemyAnimInstance.cpp">
+      <Filter>Source\AnimationPlaySpace\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Animation\EnemyAnimInstance.h">
+      <Filter>Source\AnimationPlaySpace\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\APSGameInstance.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\APSGameInstance.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\APSGameplayTags.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\APSGameplayTags.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\APSPlayerState.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\APSPlayerState.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Enemies">
+      <UniqueIdentifier>{C6761838-550C-39AB-9328-48B16A037A1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AnimationPlaySpace\Enemies\Controllers">
+      <UniqueIdentifier>{46852BE3-0D94-3183-B0F2-66D36E52C62E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Enemies\Controllers\EnemyAIController.cpp">
+      <Filter>Source\AnimationPlaySpace\Enemies\Controllers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Enemies\Controllers\EnemyAIController.h">
+      <Filter>Source\AnimationPlaySpace\Enemies\Controllers</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem">
+      <UniqueIdentifier>{05534BC4-F751-32F6-8883-4F5A0939BCE2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\APSGameplayAbility_Dodge.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\APSGameplayAbility_Dodge.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\APSGameplayAbility_MeleeAttack.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\APSGameplayAbility_MeleeAttack.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets">
+      <UniqueIdentifier>{18E723A6-E585-3B18-8E96-E516D2E2BD5F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets\BasicAttributeSet.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets\BasicAttributeSet.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets\CombatAttributeSet.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets\CombatAttributeSet.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\AttributeSets</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayCue">
+      <UniqueIdentifier>{5FF296BC-B975-3F5A-A3D3-EDD523E3AFB6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayCue\APSGameplayCue_DodgeStarted.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayCue</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayCue\APSGameplayCue_DodgeStarted.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayCue</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayEffectActors">
+      <UniqueIdentifier>{DE5C8B6C-141F-3BD6-BE2C-42531F1B2372}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayEffectActors\APSGameplayEffectActor_AOE.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayEffectActors</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayEffectActors\APSGameplayEffectActor_AOE.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\GameplayEffectActors</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\UI">
+      <UniqueIdentifier>{BF588A12-EF0C-3D66-A1F1-D30E586BDAA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels">
+      <UniqueIdentifier>{12783597-6EFA-3883-A844-E18112C7B539}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSPlayerVitalsVM.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSPlayerVitalsVM.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSPlayerVM.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSPlayerVM.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSVMBase.cpp">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels\APSVMBase.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\UI\ViewModels</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\GameplayAbilitySystem\Utilities">
+      <UniqueIdentifier>{D0F750BC-F9BA-3887-8E3E-7BB26E256413}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\GameplayAbilitySystem\Utilities\APSAttributeMessageUtils.h">
+      <Filter>Source\AnimationPlaySpace\GameplayAbilitySystem\Utilities</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\LocomotionAnimationSet.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\LocomotionAnimationSet.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\PlayerAnimInstance.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\PlayerAnimInstance.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\PlayerCharacter.cpp">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\PlayerCharacter.h">
+      <Filter>Source\AnimationPlaySpace</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Subsystems">
+      <UniqueIdentifier>{97C27903-7364-357E-BFCB-D4D178028890}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Subsystems\APSUISubsystem.cpp">
+      <Filter>Source\AnimationPlaySpace\Subsystems</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Subsystems\APSUISubsystem.h">
+      <Filter>Source\AnimationPlaySpace\Subsystems</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\UI">
+      <UniqueIdentifier>{7211AEB0-E3FE-3674-8526-7A5CD35621DA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\UI\APSUserWidget.cpp">
+      <Filter>Source\AnimationPlaySpace\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\UI\APSUserWidget.h">
+      <Filter>Source\AnimationPlaySpace\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat">
+      <UniqueIdentifier>{D74AA914-FC76-3F80-9997-9B1061F273FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat\AI">
+      <UniqueIdentifier>{57301907-A1A9-39DA-A220-516FA23633EE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\EnvQueryContext_Danger.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\EnvQueryContext_Danger.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat\Animation">
+      <UniqueIdentifier>{9053ED0D-207C-3394-8871-1B40E9BAAC17}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{D5C2CA0A-A92C-3A9F-A909-2CD100BDEA54}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{C2B29D44-CD17-31B5-ABB8-516251775E42}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Combat\UI">
+      <UniqueIdentifier>{6BDBD207-45C6-3E8F-A4DE-2C99B77CFB83}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Platforming">
+      <UniqueIdentifier>{8FEBDFF2-E84F-3ED1-92EC-6B2D48A5D224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AnimationPlaySpace\Variant_Platforming\Animation">
+      <UniqueIdentifier>{B6048C20-6BBA-3D46-B9A7-E4EC3502D0BB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\AnimationPlaySpace\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_SideScrolling">
+      <UniqueIdentifier>{1B32F494-605E-3FA8-87F5-FC5025BE1B48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AnimationPlaySpace\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{5B1FA6D2-8579-3E71-B0CE-0EFAEABCC73E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{E049E2C6-4BD9-3285-8EFD-E0326FBA9DEF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{8500EADC-A081-371E-8F93-DC50458CB1C7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\AnimationPlaySpace\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{DE3FC683-5443-31EE-AEBE-F7772207ACA2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AnimationPlaySpace\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\AnimationPlaySpace\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

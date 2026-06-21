@@ -1,0 +1,43 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Player/PlayerCharacter.h"
+
+#include "Creatures.h"
+#include "EnhancedInputComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
+
+void APlayerCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	
+	// Set up action bindings
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		// Orient character to camera when mouse button is pressed.
+		EnhancedInputComponent->BindAction(OrientToMouse, ETriggerEvent::Triggered, this, &APlayerCharacter::EnableOrientToMouse);
+		EnhancedInputComponent->BindAction(OrientToMouse, ETriggerEvent::Completed, this, &APlayerCharacter::DisableOrientToMouse);
+	}
+	else
+	{
+		UE_LOG(LogCreatures, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+	}
+}
+
+void APlayerCharacter::ToggleOrientToMouse(const bool bShouldOrientToMouse)
+{
+	if (UCharacterMovementComponent* movementComponent = Cast<UCharacterMovementComponent>(GetMovementComponent()))
+	{
+		movementComponent->bOrientRotationToMovement = bShouldOrientToMouse;
+	}
+}
+
+void APlayerCharacter::EnableOrientToMouse()
+{
+	ToggleOrientToMouse(true);
+}
+
+void APlayerCharacter::DisableOrientToMouse()
+{
+	ToggleOrientToMouse(false);
+}

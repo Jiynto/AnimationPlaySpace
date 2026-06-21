@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\gameplayabilitysystem\\ui\\viewmodels\\apsvmbase.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\animationplayspaceeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\animationplayspace\\definitions.animationplayspace.h",
+            "e:\\unreal\\projects\\animationplayspace\\source\\animationplayspace\\gameplayabilitysystem\\ui\\viewmodels\\apsvmbase.h",
+            "e:\\unreal\\ue_5.7\\engine\\plugins\\runtime\\modelviewviewmodel\\source\\modelviewviewmodel\\public\\mvvmviewmodelbase.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\core\\public\\algo\\compare.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\fieldnotification\\public\\fieldnotificationdeclaration.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\fieldnotification\\public\\ifieldnotificationclassdescriptor.h",
+            "e:\\unreal\\ue_5.7\\engine\\plugins\\runtime\\modelviewviewmodel\\source\\modelviewviewmodel\\public\\viewmodel\\mvvmfieldnotificationdelegates.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\fieldnotification\\public\\fieldnotificationdelegate.h",
+            "e:\\unreal\\ue_5.7\\engine\\source\\runtime\\fieldnotification\\public\\inotifyfieldvaluechanged.h",
+            "e:\\unreal\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\fieldnotification\\uht\\inotifyfieldvaluechanged.generated.h",
+            "e:\\unreal\\ue_5.7\\engine\\plugins\\runtime\\modelviewviewmodel\\intermediate\\build\\win64\\unrealeditor\\inc\\modelviewviewmodel\\uht\\mvvmviewmodelbase.generated.h",
+            "e:\\unreal\\projects\\animationplayspace\\intermediate\\build\\win64\\unrealeditor\\inc\\animationplayspace\\uht\\apsvmbase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
