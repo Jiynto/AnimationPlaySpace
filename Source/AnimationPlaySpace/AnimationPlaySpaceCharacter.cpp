@@ -90,6 +90,11 @@ void AAnimationPlaySpaceCharacter::OnNewWeaponEquipped()
 	}
 }
 
+void AAnimationPlaySpaceCharacter::SetStance(const bool bInStance)
+{
+	bInWeaponStance = bInStance;
+}
+
 AAnimationPlaySpaceCharacter::AAnimationPlaySpaceCharacter()
 {
 	// Set size for collision capsule

@@ -21,19 +21,12 @@ class ANIMATIONPLAYSPACE_API UPlayerAnimInstance : public UAPSAnimInstance
 	
 public:
 	
-	virtual void NativeInitializeAnimation() override;
+	//virtual void NativeInitializeAnimation() override;
 	virtual void NativeUpdateAnimation(float DeltaSeconds) override;
 	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds) override;
 	
 	UFUNCTION(BlueprintCallable)
 	bool SetLocomotionState(ELocomotionState InLocomotionState);
 	
-protected:
-	
-	UPROPERTY(BlueprintReadWrite)
-	TObjectPtr<ACharacter> PlayerCharacter;
-	
-	UPROPERTY(BlueprintReadWrite)
-	TObjectPtr<class UCharacterMovementComponent> PlayerCharacterMovement;
 	
 };

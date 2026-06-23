@@ -17,8 +17,20 @@ class ANIMATIONPLAYSPACE_API UAPSAnimInstance : public UAnimInstance
 	
 public:
 	
+	virtual void NativeInitializeAnimation() override;
+	virtual void NativeThreadSafeUpdateAnimation(float DeltaSeconds) override;
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	FLocomotionAnimationData LocomotionAnimationData;
 	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool bInWeaponStance = false;
 	
+protected:
+	
+	UPROPERTY(BlueprintReadWrite)
+	TObjectPtr<class AAnimationPlaySpaceCharacter> Character;
+	
+	UPROPERTY(BlueprintReadWrite)
+	TObjectPtr<class UCharacterMovementComponent> CharacterMovement;
 };

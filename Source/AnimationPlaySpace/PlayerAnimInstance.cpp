@@ -1,23 +1,12 @@
 #include "PlayerAnimInstance.h"
 
-#include "GameFramework/Character.h"
+#include "AnimationPlaySpaceCharacter.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "KismetAnimationLibrary.h"
 #include "LocomotionAnimationSet.h"
 #include "Animation/AnimationUtilityFunctionLibrary.h"
 
-
-void UPlayerAnimInstance::NativeInitializeAnimation()
-{
-	Super::NativeInitializeAnimation();
-	
-	PlayerCharacter = Cast<ACharacter>(GetOwningActor());
-	if (PlayerCharacter)
-	{
-		PlayerCharacterMovement = PlayerCharacter->GetCharacterMovement();
-	}
-}
 
 void UPlayerAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 {
@@ -29,24 +18,24 @@ void UPlayerAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 	Super::NativeThreadSafeUpdateAnimation(DeltaSeconds);
 	
 	
-	if (!PlayerCharacter)
+	if (!Character)
 	{
 		return;
 	}
 	
-	if (!PlayerCharacterMovement)
+	if (!CharacterMovement)
 	{
 		return;
 	}
 	
-	LocomotionAnimationData.CharacterSpeed = PlayerCharacterMovement->Velocity.Size2D();
-	LocomotionAnimationData.CharacterVelocity2D = PlayerCharacterMovement->Velocity * FVector(1,1,0);
-	LocomotionAnimationData.WorldRotation = PlayerCharacter->GetActorRotation();
-	LocomotionAnimationData.CharacterAcceleration = PlayerCharacterMovement->GetCurrentAcceleration();
+	LocomotionAnimationData.CharacterSpeed = CharacterMovement->Velocity.Size2D();
+	LocomotionAnimationData.CharacterVelocity2D = CharacterMovement->Velocity * FVector(1,1,0);
+	LocomotionAnimationData.WorldRotation = Character->GetActorRotation();
+	LocomotionAnimationData.CharacterAcceleration = CharacterMovement->GetCurrentAcceleration();
 	
 	// will need to add the clamping thing for strafing.
-	float directionActual = UKismetAnimationLibrary::CalculateDirection(PlayerCharacterMovement->Velocity, PlayerCharacter->GetActorRotation());
-	if (PlayerCharacterMovement->bOrientRotationToMovement)
+	float directionActual = UKismetAnimationLibrary::CalculateDirection(CharacterMovement->Velocity, Character->GetActorRotation());
+	if (CharacterMovement->bOrientRotationToMovement)
 	{
 		LocomotionAnimationData.Direction = UKismetMathLibrary::Clamp(directionActual, -45, 45);
 	}
@@ -55,57 +44,16 @@ void UPlayerAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 		LocomotionAnimationData.Direction = directionActual;
 	}
 
-	LocomotionAnimationData.bShouldMove = PlayerCharacterMovement->GetCurrentAcceleration() != FVector::ZeroVector;
-	LocomotionAnimationData.bIsFalling = PlayerCharacterMovement->IsFalling();
+	LocomotionAnimationData.bShouldMove = CharacterMovement->GetCurrentAcceleration() != FVector::ZeroVector;
+	LocomotionAnimationData.bIsFalling = CharacterMovement->IsFalling();
 	
 	
 	
 	if (LocomotionAnimationData.CharacterSpeed > 0)
 	{
 		//const float speedGate = AnimationData.PlayerSpeed > 300 ? 600 : 300;
-		const float maxSpeedGate = PlayerCharacterMovement->MaxWalkSpeed;
-	
-		float directionGate = 0;
-
-	
-		if (LocomotionAnimationData.Direction > 0)
-		{
-			if (LocomotionAnimationData.Direction >  157.5)
-			{
-				directionGate = 180;
-			}
-			else if (LocomotionAnimationData.Direction > 112.5)
-			{
-				directionGate = 135;
-			} 
-			else if (LocomotionAnimationData.Direction > 67.5)
-			{
-				directionGate = 90;
-			}
-			else if (LocomotionAnimationData.Direction > 22.5)
-			{
-				directionGate = 45;
-			}
-		}
-		else if (LocomotionAnimationData.Direction < 0)
-		{
-			if (LocomotionAnimationData.Direction < -157.5)
-			{
-				directionGate = -180;
-			}
-			else if (LocomotionAnimationData.Direction < -112.5)
-			{
-				directionGate = -135;
-			}
-			else if (LocomotionAnimationData.Direction < -67.5)
-			{
-				directionGate = -90;
-			}
-			else if (LocomotionAnimationData.Direction < -22.5)
-			{
-				directionGate = -45;
-			}
-		}
+		const float maxSpeedGate = CharacterMovement->MaxWalkSpeed;
+		
 		
 		LocomotionAnimationData.LocomotionStoppingSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(LocomotionAnimationData.Direction, maxSpeedGate, LocomotionAnimationData.LocomotionAnimSetBase->StopAnimations);
 		LocomotionAnimationData.LocomotionStartSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(LocomotionAnimationData.Direction, maxSpeedGate, LocomotionAnimationData.LocomotionAnimSetBase->StartAnimations);
@@ -119,19 +67,6 @@ void UPlayerAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 		LocomotionAnimationData.EquipmentSecondaryStartSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(LocomotionAnimationData.Direction, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StartAnimations);
 		LocomotionAnimationData.EquipmentSecondaryStopSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(LocomotionAnimationData.Direction, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StopAnimations);
 		LocomotionAnimationData.EquipmentSecondaryMovingSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(LocomotionAnimationData.Direction, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->MovingAnimations);
-		
-		/*
-		LocomotionAnimationData.LocomotionStoppingSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimSetBase->StopAnimations);
-		LocomotionAnimationData.LocomotionStartSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimSetBase->StartAnimations);
-		
-		LocomotionAnimationData.EquipmentPrimaryStartSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StartAnimations);
-		LocomotionAnimationData.EquipmentPrimaryStopSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StopAnimations);
-		LocomotionAnimationData.EquipmentPrimaryMovingSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->MovingAnimations);
-		
-		LocomotionAnimationData.EquipmentSecondaryStartSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StartAnimations);
-		LocomotionAnimationData.EquipmentSecondaryStopSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->StopAnimations);
-		LocomotionAnimationData.EquipmentSecondaryMovingSequence = UAnimationUtilityFunctionLibrary::GetSequenceFromLocomotionAnimSet(directionGate, maxSpeedGate, LocomotionAnimationData.LocomotionAnimEquipmentPrimary->MovingAnimations);
-		*/
 	}
 }
 

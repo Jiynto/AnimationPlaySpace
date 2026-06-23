@@ -28,6 +28,12 @@ public:
 	UFUNCTION(Category = "Equipment|Weapons")
 	void OnNewWeaponEquipped();
 	
+	UFUNCTION(BlueprintCallable)
+	void SetStance(const bool bInStance);
+	
+	UFUNCTION(BlueprintCallable)
+	bool GetStance() const { return bInWeaponStance; };
+	
 protected:
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Equipment|Weapons")
@@ -41,6 +47,9 @@ protected:
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Equipment")
 	FName RightHandSocketName;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Equipment", meta = (AllowPrivateAccess = "true"))
+	bool bInWeaponStance = false;
 
 public:
 

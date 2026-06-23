@@ -47,7 +47,7 @@ protected:
 	
 	UPROPERTY()
 	TObjectPtr<class UAPSPlayerVM> PlayerVM;
-	
+
 public:
 
 	
